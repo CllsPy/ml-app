@@ -31,3 +31,7 @@ with st.sidebar:
   spw = st.slider('Sepal Width Cm', 0.0, 100.0)
   ptl = st.slider('Petal Length Cm', 0.0, 100.0)
   plw = st.slider('Petal Width Cm', 0.0, 100.0)
+
+  # generate a dataframe with input data
+  idf = {'spl': spl, 'spw': spw, 'ptl': ptl, 'plw': pwl}
+  idf
