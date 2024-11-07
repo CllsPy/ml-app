@@ -46,5 +46,4 @@ with st.expander('Novos Dados'):
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33, random_state=42)
 model = RandomForestClassifier()
 model.fit(X_train, y_train)
-y_hat = model.predict(input_data)
-y_hat
+
