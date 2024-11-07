@@ -37,4 +37,5 @@ with st.sidebar:
   data = {'spl': spl, 'spw': spw, 'ptl': ptl, 'plw': plw}
   input_data = pd.DataFrame(data, index=[0])
 
-input_data
+with st.expander('Novos Dados'):
+  input_data
