@@ -35,7 +35,6 @@ with st.sidebar:
   plw = st.slider('Petal Width Cm', 0.0, 100.0)
 
   # generate a dataframe with input data
-  st.write('**Novos Datas**')
   data = {'SepalLengthCm': spl, 'SepalWidthCm': spw, 'PetalLengthCm': ptl, 'PetalWidthCm': plw}
   input_data = pd.DataFrame(data, index=[0])
 
