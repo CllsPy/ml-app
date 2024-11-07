@@ -7,6 +7,6 @@ st.title('Auto-Machine Learning')
 st.info("A webapp based on pure Python that automacaly trains ML models on your data")
 
 with st.expander ('Data'):
-  st.write(**Raw Data**)
+  st.write('**Raw Data**')
   df = pd.read_csv(URL_DATA)
   data
