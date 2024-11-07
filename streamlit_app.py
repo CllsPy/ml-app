@@ -28,3 +28,6 @@ with st.expander('Data Vis'):
 with st.sidebar:
   st.header('Input')
   spl = st.slider('Sepal Length em Cm', 0.0, 100.0)
+  spw = st.slider('Sepal Width Cm', 0.0, 100.0)
+  ptl = st.slider('Petal Length Cm', 0.0, 100.0)
+  plw = st.slider('Petal Width Cm', 0.0, 100.0)
