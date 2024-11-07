@@ -27,4 +27,4 @@ with st.expander('Data Vis'):
 
 with st.sidebar:
   st.header('Input')
-  spl = st.slider('Sepal Length em Cm', 0.1, 20)
+  spl = st.slider('Sepal Length em Cm', 0.1, 7, 20)
