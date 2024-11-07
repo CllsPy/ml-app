@@ -22,4 +22,4 @@ with st.expander ('Data'):
 # SepalLengthCm,SepalWidthCm,PetalLengthCm,PetalWidthCm,Species
 with st.expander('Data Vis'):
   st.write('**ScatterPlot**')
-  st.scater_chart(data=df, x='SepalLengthCm', y='PetalLengthCm', color='Species')
+  st.scatter_chart(data=df, x='SepalLengthCm', y='PetalLengthCm', color='Species')
