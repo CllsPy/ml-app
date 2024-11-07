@@ -26,5 +26,6 @@ with st.expander('Data Vis'):
   st.scatter_chart(data=df, x='SepalWidthCm', y='PetalWidthCm', color='Species')
 
 
-with st.siderbar('Input'):
+with st.siderbar:
+  st.header('Input')
   spl = st.slider('Sepal Length em Cm', 0.1, 20)
