@@ -18,3 +18,8 @@ with st.expander ('Data'):
   st.write('**Target**')
   y = df.iloc[:, 5:]
   y
+
+# SepalLengthCm,SepalWidthCm,PetalLengthCm,PetalWidthCm,Species
+with st.expander('Data Vis'):
+  st.write('**ScatterPlot**)
+  st.scater_chart(data=df, x='SepalLengthCm', y='PetalLengthCm', color='Species')
