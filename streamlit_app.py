@@ -1,5 +1,7 @@
 import streamlit as st
 import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestClassifier
 
 # constants
 URL_DATA = 'https://raw.githubusercontent.com/venky14/Machine-Learning-with-Iris-Dataset/refs/heads/master/Iris.csv'
@@ -39,3 +41,10 @@ with st.sidebar:
 
 with st.expander('Novos Dados'):
   input_data
+
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33, random_state=42)
+model = RandomForestClassifier()
+model.fit(X_train, y_train)
+y_hat = model.predict(input_data)
+y_hat
