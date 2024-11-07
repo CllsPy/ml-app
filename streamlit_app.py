@@ -35,4 +35,4 @@ with st.sidebar:
   # generate a dataframe with input data
   data = {'spl': spl, 'spw': spw, 'ptl': ptl, 'plw': plw}
   input_data = pd.DataFrame(data, index=[0])
-  input data
+  input_data
