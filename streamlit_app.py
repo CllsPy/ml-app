@@ -16,5 +16,5 @@ with st.expander ('Data'):
   X
 
 st.write('**Target**')
-y = df.iloc[:, :5]
+y = df.iloc[:, 6:]
 y
