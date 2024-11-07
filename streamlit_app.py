@@ -36,4 +36,5 @@ with st.sidebar:
   st.write('**Novos Datas**')
   data = {'spl': spl, 'spw': spw, 'ptl': ptl, 'plw': plw}
   input_data = pd.DataFrame(data, index=[0])
-  input_data
+
+input_data
