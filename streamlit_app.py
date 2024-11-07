@@ -12,5 +12,5 @@ with st.expander ('Data'):
   df
 
   st.write('**Features**')
-  X = df.iloc[:, 1:3]
+  X = df.iloc[:, 1:4]
   X
