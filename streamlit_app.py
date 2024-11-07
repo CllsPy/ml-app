@@ -36,7 +36,7 @@ with st.sidebar:
 
   # generate a dataframe with input data
   st.write('**Novos Datas**')
-  data = {'spl': spl, 'spw': spw, 'ptl': ptl, 'plw': plw}
+  data = {'SepalLengthCm': spl, 'SepalWidthCm': spw, 'PetalLengthCm': ptl, 'PetalWidthCm': plw}
   input_data = pd.DataFrame(data, index=[0])
 
 with st.expander('Novos Dados'):
@@ -46,8 +46,7 @@ with st.expander('Novos Dados'):
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33, random_state=42)
 model = RandomForestClassifier()
 model.fit(X_train, y_train)
-#y_h = model.predict(input_data)
-#y_h
-input_data
-X_test
+y_h = model.predict(input_data)
+y_h
+
 
