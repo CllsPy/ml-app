@@ -9,4 +9,6 @@ st.info("A webapp based on pure Python that automacaly trains ML models on your 
 with st.expander ('Data'):
   st.write('**Raw Data**')
   df = pd.read_csv(URL_DATA)
-  data
+  df
+
+  st.write('**Features**')
